@@ -1,0 +1,52 @@
+version: '3.8'
+
+services:
+  telegraf:
+    image: telegraf
+    container_name: telegraf
+    restart: always
+    volumes:
+      - ./telegraf/telegraf.conf:/etc/telegraf/telegraf.conf:ro
+      - ./telegraf/mibs:/usr/share/snmp/mibs:ro
+
+  influxdb:
+    image: influxdb
+    container_name: influxdb
+    restart: always
+    #env_file: config.env
+    environment: 
+      - INFLUXDB_DB=telegraf
+      - INFLUXDB_ADMIN_USER=admin
+      - INFLUXDB_ADMIN_PASSWORD=admin
+    ports:
+      - "8086:8086"
+    networks:
+      - monitoring
+    volumes:
+      - influxdb_vol:/var/lib/influxdb
+
+  grafana:
+    image: grafana/grafana
+    container_name: grafana
+    restart: always
+    #env_file: config.env
+    environment: 
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+      - GF_INSTALL_PLUGINS=
+    ports:
+      - "3000:3000"
+    networks:
+     - monitoring
+    volumes:
+      - grafana_vol:/var/lib/grafana
+      - ./grafana/provisioning:/etc/grafana/provisioning/
+      - ./grafana/dashboards:/var/lib/grafana/dashboards/
+
+networks:
+  monitoring:
+
+volumes:
+  grafana_vol:
+  influxdb_vol:
+
