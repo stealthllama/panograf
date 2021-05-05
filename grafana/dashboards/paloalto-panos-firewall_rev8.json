@@ -1,7 +1,7 @@
 {
   "__inputs": [
     {
-      "name": "DS_INFLUXDB_TELEGRAF",
+      "name": "InfluxDB",
       "label": "influxdb_telegraf",
       "description": "",
       "type": "datasource",
@@ -64,7 +64,7 @@
   "panels": [
     {
       "cacheTimeout": null,
-      "datasource": "${DS_INFLUXDB_TELEGRAF}",
+      "datasource": "InfluxDB",
       "description": "",
       "fieldConfig": {
         "defaults": {
@@ -234,7 +234,7 @@
       "type": "bargauge"
     },
     {
-      "datasource": "${DS_INFLUXDB_TELEGRAF}",
+      "datasource": "InfluxDB}",
       "description": "",
       "fieldConfig": {
         "defaults": {
@@ -322,7 +322,7 @@
       "type": "stat"
     },
     {
-      "datasource": "${DS_INFLUXDB_TELEGRAF}",
+      "datasource": "InfluxDB",
       "description": "",
       "fieldConfig": {
         "defaults": {
@@ -404,7 +404,7 @@
     },
     {
       "collapsed": false,
-      "datasource": "${DS_INFLUXDB_TELEGRAF}",
+      "datasource": "InfluxDB",
       "gridPos": {
         "h": 1,
         "w": 24,
@@ -421,7 +421,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "${DS_INFLUXDB_TELEGRAF}",
+      "datasource": "InfluxDB",
       "decimals": 0,
       "fieldConfig": {
         "defaults": {
@@ -620,7 +620,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "${DS_INFLUXDB_TELEGRAF}",
+      "datasource": "InfluxDB",
       "fieldConfig": {
         "defaults": {
           "custom": {},
@@ -805,7 +805,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "${DS_INFLUXDB_TELEGRAF}",
+      "datasource": "InfluxDB",
       "fieldConfig": {
         "defaults": {
           "custom": {},
@@ -942,7 +942,7 @@
     },
     {
       "collapsed": false,
-      "datasource": "${DS_INFLUXDB_TELEGRAF}",
+      "datasource": "InfluxDB",
       "gridPos": {
         "h": 1,
         "w": 24,
@@ -959,7 +959,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "${DS_INFLUXDB_TELEGRAF}",
+      "datasource": "InfluxDB",
       "fieldConfig": {
         "defaults": {
           "custom": {},
@@ -1183,7 +1183,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "${DS_INFLUXDB_TELEGRAF}",
+      "datasource": "InfluxDB",
       "fieldConfig": {
         "defaults": {
           "custom": {},
@@ -1404,7 +1404,7 @@
     },
     {
       "collapsed": false,
-      "datasource": "${DS_INFLUXDB_TELEGRAF}",
+      "datasource": "InfluxDB",
       "gridPos": {
         "h": 1,
         "w": 24,
@@ -1421,7 +1421,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "${DS_INFLUXDB_TELEGRAF}",
+      "datasource": "InfluxDB",
       "decimals": 0,
       "fieldConfig": {
         "defaults": {
@@ -1567,7 +1567,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "${DS_INFLUXDB_TELEGRAF}",
+      "datasource": "InfluxDB",
       "fieldConfig": {
         "defaults": {
           "custom": {},
@@ -1791,7 +1791,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "${DS_INFLUXDB_TELEGRAF}",
+      "datasource": "InfluxDB",
       "description": "Number of active Conexión Per Second for Vsys",
       "fieldConfig": {
         "defaults": {
@@ -2035,7 +2035,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "${DS_INFLUXDB_TELEGRAF}",
+      "datasource": "InfluxDB",
       "description": "Connections Per Seconds by Security Zone.",
       "fieldConfig": {
         "defaults": {
@@ -2212,7 +2212,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "${DS_INFLUXDB_TELEGRAF}",
+      "datasource": "InfluxDB",
       "description": "Connections Per Seconds by Protocol for each security zone.",
       "fieldConfig": {
         "defaults": {
@@ -2483,7 +2483,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "${DS_INFLUXDB_TELEGRAF}",
+      "datasource": "InfluxDB",
       "fieldConfig": {
         "defaults": {
           "custom": {},
@@ -2670,7 +2670,7 @@
     },
     {
       "collapsed": false,
-      "datasource": "${DS_INFLUXDB_TELEGRAF}",
+      "datasource": "InfluxDB",
       "gridPos": {
         "h": 1,
         "w": 24,
@@ -2687,7 +2687,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "${DS_INFLUXDB_TELEGRAF}",
+      "datasource": "InfluxDB",
       "fieldConfig": {
         "defaults": {
           "custom": {},
@@ -2819,7 +2819,7 @@
     },
     {
       "collapsed": false,
-      "datasource": "${DS_INFLUXDB_TELEGRAF}",
+      "datasource": "InfluxDB",
       "gridPos": {
         "h": 1,
         "w": 24,
@@ -2836,7 +2836,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "${DS_INFLUXDB_TELEGRAF}",
+      "datasource": "InfluxDB",
       "fieldConfig": {
         "defaults": {
           "custom": {},
@@ -3261,7 +3261,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "${DS_INFLUXDB_TELEGRAF}",
+      "datasource": "InfluxDB",
       "description": "TCP SYN Cookies, classified profile",
       "fieldConfig": {
         "defaults": {
@@ -3653,7 +3653,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "${DS_INFLUXDB_TELEGRAF}",
+      "datasource": "InfluxDB",
       "fieldConfig": {
         "defaults": {
           "custom": {},
@@ -4036,7 +4036,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "${DS_INFLUXDB_TELEGRAF}",
+      "datasource": "InfluxDB",
       "fieldConfig": {
         "defaults": {
           "custom": {},
@@ -4457,7 +4457,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "${DS_INFLUXDB_TELEGRAF}",
+      "datasource": "InfluxDB",
       "fieldConfig": {
         "defaults": {
           "custom": {},
@@ -4647,7 +4647,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "${DS_INFLUXDB_TELEGRAF}",
+      "datasource": "InfluxDB",
       "description": "Number of entries in DoS block tables",
       "fieldConfig": {
         "defaults": {
@@ -4870,7 +4870,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "${DS_INFLUXDB_TELEGRAF}",
+      "datasource": "InfluxDB",
       "fieldConfig": {
         "defaults": {
           "custom": {},
@@ -5059,7 +5059,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "${DS_INFLUXDB_TELEGRAF}",
+      "datasource": "InfluxDB",
       "fieldConfig": {
         "defaults": {
           "custom": {},
@@ -5545,7 +5545,7 @@
       {
         "allValue": null,
         "current": {},
-        "datasource": "${DS_INFLUXDB_TELEGRAF}",
+        "datasource": "InfluxDB",
         "definition": "SHOW TAG VALUES FROM \"pan_vsys\" WITH KEY = \"cluster\" ",
         "description": null,
         "error": null,
@@ -5569,7 +5569,7 @@
       {
         "allValue": null,
         "current": {},
-        "datasource": "${DS_INFLUXDB_TELEGRAF}",
+        "datasource": "InfluxDB",
         "definition": "SHOW TAG VALUES FROM \"pan_vsys\" WITH KEY = \"hostname\"  WHERE cluster =~ /$cluster/",
         "description": null,
         "error": null,
@@ -5614,4 +5614,3 @@
   "uid": "qLLeD-JZ7",
   "version": 5
 }
-

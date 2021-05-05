@@ -3,7 +3,7 @@ apiVersion: 1
 
 # list of datasources that should be deleted from the database
 deleteDatasources:
-  - name: Influxdb
+  - name: InfluxDB
     orgId: 1
 
 # list of datasources to insert/update depending
@@ -24,7 +24,7 @@ datasources:
   # <string> database user, if used
   user: "admin"
   # <string> database name, if used
-  database: "influx"
+  database: "telegraf"
   # <bool> enable/disable basic auth
   basicAuth: false
 #  withCredentials:
