@@ -10,3 +10,4 @@ This `docker-compose.yml` file implements a TIG stack ([Telegraf](https://www.in
 2. Ensure that SNMP is enabled on your firewall management interfaces and that an SNMP community string is defined and matches the one in the configuration file.
 3. Run the command `docker-compose up -d` to start the deployment.
 4. Access the Grafana server at [http://localhost:3000](http://localhost:3000).
+5. Log into the Grafana server (admin/admin) and access the PAN-OS dashboard.
