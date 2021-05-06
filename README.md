@@ -10,7 +10,7 @@ This `docker-compose.yml` file implements a TIG stack ([Telegraf](https://www.in
 
 ## Installation
 
-1. Clone this repository onto a Docker server and then `cd ` into the repository directory.
+1. Clone this repository onto a Docker server and then `cd` into the repository directory.
 2. Edit the file `telegraf/config/panos.conf` and add a list of firewall IP addresses to monitor in the section `[inputs.snmp]` and define the SNMP community string that will be used.
 3. Ensure that SNMP is enabled on your firewall management interfaces and that an SNMP community string is defined and matches the one in the configuration file.
 4. Run the command `docker-compose up -d` to start the deployment.
