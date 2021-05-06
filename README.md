@@ -1,6 +1,8 @@
 # panograf
 A TIG stack for monitoring Palo Alto Networks firewalls.
 
+![](https://github.com/vbarahona/Panos2Grafana/blob/master/screencapture-paloalto-grafana.png)
+
 ## Overview
 This `docker-compose.yml` file implements a TIG stack ([Telegraf](https://www.influxdata.com/time-series-platform/telegraf/), [InfluxDB](https://www.influxdata.com/products/influxdb/), and [Grafana](https://grafana.com)) used for monitoring Palo Alto Networks NGFW devices via SNMP and trending the results in a Grafana dashboard.
 
